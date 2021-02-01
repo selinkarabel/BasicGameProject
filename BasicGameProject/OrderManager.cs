@@ -18,5 +18,10 @@ namespace BasicGameProject
             _campaignService.AddCampaign();
             Console.WriteLine("Order is successfull by " + gamer.FirstName);
         }
+
+        public void Order(Gamer gamer)
+        {
+            Console.WriteLine("Order is successfull by " + gamer.FirstName);
+        }
     }
 }

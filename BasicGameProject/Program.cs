@@ -13,10 +13,17 @@ namespace BasicGameProject
             gamer1.GamerId = 1;
             gamer1.FirstName = "Sello";
 
+            Gamer gamer2 = new Gamer();
+            gamer2.GamerId = 2;
+            gamer2.FirstName = "Cengizhan";
+
             ICampaignService campaignService = new WinterSeasonCampaignManager();
 
             IOrderService order = new OrderManager(campaignService);
             order.Order(gamer1,campaignService);
+
+            IOrderService order2 = new OrderManager(campaignService);
+            order2.Order(gamer2);
            
         }
     }

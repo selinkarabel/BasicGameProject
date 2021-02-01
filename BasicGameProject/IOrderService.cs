@@ -6,6 +6,7 @@ namespace BasicGameProject
 {
     interface IOrderService
     {
+        void Order(Gamer gamer);
         void Order(Gamer gamer, ICampaignService campaign);
         
     }
